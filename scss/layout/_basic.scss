@@ -1,0 +1,86 @@
+/*Basic css*/
+* {
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    font-family: $font;
+    background-color: $bc;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    height: 50px;
+    padding: 10px 5px;
+
+    .logo {
+        height: 50px;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+
+    .dot {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        animation-name: rainbow;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+
+@keyframes rainbow {
+    0% {
+        background-color: #e93838;
+    }
+
+    12.5% {
+        background-color: #d78836;
+    }
+
+    25% {
+        background-color: #d7d636;
+    }
+
+    37.5% {
+        background-color: #6ed736;
+    }
+
+    50% {
+        background-color: #249636;
+    }
+
+    62.5% {
+        background-color: #00cbd7;
+    }
+
+    75% {
+        background-color: #243096;
+    }
+
+    87.5% {
+        background-color: #862496;
+    }
+
+    100% {
+        background-color: #e93838;
+    }
+}
